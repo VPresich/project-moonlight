@@ -55,7 +55,7 @@ var T=(e,t,s)=>{if(!t.has(e))throw TypeError("Cannot "+s)};var B=(e,t,s)=>(T(e,t
             </ul>
           </div>
         </li>
-      `,"")}const pe="favorites",fe="Escape",J="modal-backdrop",ge=".exercise-close-btn",be=".exercises-gallery",he="gallery-start",K="is-open",ve=".exercise-favorite-btn",ye=".exercise-raiting-btn",Y="Remove from",Q="Add to favorites",xe=".modal-rating";function Ee(e={}){const{_id:t,bodyPart:s,equipment:a,time:r,target:n,burnedCalories:c,gifUrl:p,name:f,filter:L,popularity:g,rating:M,description:N}=e;return`
+      `,"")}const pe="favorites",fe="Escape",J="modal-backdrop",ge=".exercise-close-btn",be=".exercises-gallery",he="gallery-start",K="is-open",ve=".exercise-favorite-btn",ye=".exercise-raiting-btn",Y="Remove from",Q="Add to favorites",xe=".modal-rating";function Ee(e={}){const{_id:t,bodyPart:s,equipment:a,time:r,target:n,burnedCalories:c,gifUrl:p,name:f,filter:L,popularity:g,rating:M,description:N}=e;return`    
         <div class="exercise-window">
           <div class="exercise-container">
             <button class="exercise-close-btn" type="button">
@@ -123,8 +123,7 @@ var T=(e,t,s)=>{if(!t.has(e))throw TypeError("Cannot "+s)};var B=(e,t,s)=>(T(e,t
               </div>
             </div>
           </div>
-        </div>   
-
+        </div> 
       `}const z=(e,t)=>{const s=Ee(e);t.innerHTML="",t.insertAdjacentHTML("beforeend",s)};async function V(e){const t=new q(O);try{return await t.objectGetRequest(`exercises/${e}`)}catch(s){console.log("Error fetching exercise data:",s.message)}}function C(e,t){const s=t.childNodes[0];s.nodeValue=e}function Se(e,t){const a=(JSON.parse(localStorage.getItem("favorites"))||[]).some(r=>r._id===e);C(a?Y:Q,t)}function Ce(e){return{_id:e,name:document.querySelector(".exercise-name").textContent,bodyPart:document.querySelector(".exercise-param-bodypart").textContent,burnedCalories:document.querySelector(".exercise-calories-value").textContent.split("/")[0],target:document.querySelector(".exercise-param-target").textContent}}function Le(e,t){const s=Ce(e),a=JSON.parse(localStorage.getItem("favorites"))||[],r=a.findIndex(n=>n.name===s.name);r!==-1?(a.splice(r,1),C(Q,t)):(a.push(s),C(Y,t)),localStorage.setItem(pe,JSON.stringify(a))}const Te=(e,t)=>e<t?"#EEA10C":"#7E847F",Re=e=>{const t=parseInt(e.textContent);let s="";for(let a=0;a<5;a++)s+=`
       <svg
         class="exercise-star"
@@ -254,4 +253,4 @@ var T=(e,t,s)=>{if(!t.has(e))throw TypeError("Cannot "+s)};var B=(e,t,s)=>(T(e,t
             </a>
         </li>
       `,"")}function G(e,t,s=[]){const a=Ze(t,s);e.innerHTML="",e.insertAdjacentHTML("beforeend",a)}const ot=()=>{const e={iconURL:o,iconContainerClass:"social-list-item",iconLinkClass:"social-list-link",iconClass:"social-list-icon"},t=document.querySelector(".social-list-header");G(t,e,U);const s={iconURL:o,iconContainerClass:"social-list-item",iconLinkClass:"social-list-link-menu",iconClass:"social-list-icon-menu"},a=document.querySelector(".social-list-menu");G(a,s,U)},Xe=document.querySelector(".js-open-menu-btn"),re=document.querySelector(".js-mobile-menu"),et=document.querySelector(".js-mobile-menu-close-btn"),ne="is-open";Xe.addEventListener("click",()=>{re.classList.add(ne)});et.addEventListener("click",()=>{re.classList.remove(ne)});function tt(e){e.classList.add("active-btn"),e.classList.remove("btn")}function st(e){e.classList.remove("active-btn"),e.classList.add("btn")}function ct(e,t){Array.from(e).forEach(s=>{tt(s)}),Array.from(t).forEach(s=>{st(s)})}export{O as B,q as D,pe as K,ot as a,Pe as b,b as c,G as d,nt as e,o as i,ct as m,Qe as o,U as s,_e as v};
-//# sourceMappingURL=handle-menu-buttons-0cf96183.js.map
+//# sourceMappingURL=handle-menu-buttons-20cdabba.js.map
