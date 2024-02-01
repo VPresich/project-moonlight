@@ -6,6 +6,7 @@
   height: 100%;
   background: rgba(46, 47, 66, 0.8);
   z-index: 9999;
+  padding: 20px 20px 40px;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -30,7 +31,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 335px;
-  height: 732px;
   border-radius: 20px;
   background-color: var(--primary-color);
   overflow-y: auto;
@@ -252,9 +252,6 @@
 .exercise-raiting-btn:hover,
 .exercise-raiting-btn:focus {
   border: 1px solid #7e847f;
-}
-
-@media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
