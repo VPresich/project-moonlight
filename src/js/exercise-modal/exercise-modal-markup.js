@@ -32,7 +32,7 @@ function modalWindowMarkup(filters = {}) {
     description,
   } = filters;
 
-  return `
+  return `    
         <div class="exercise-window">
           <div class="exercise-container">
             <button class="exercise-close-btn" type="button">
@@ -100,8 +100,7 @@ function modalWindowMarkup(filters = {}) {
               </div>
             </div>
           </div>
-        </div>   
-
+        </div> 
       `;
 }
 
