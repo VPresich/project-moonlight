@@ -1,11 +1,11 @@
 {
-  "name": "project-team-dynamics",
+  "name": "project-moonlight",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/dynamics/",
+    "build": "vite build --base=/project-moonlight/",
     "preview": "vite preview"
   },
   "devDependencies": {
