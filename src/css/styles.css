@@ -1,0 +1,33 @@
+@import url('./utils/variables.css');
+@import url('./utils/visually-hidden.css');
+@import url('./utils/fonts.css');
+
+@import url('./base/common.css');
+@import url('./base/container.css');
+@import url('./base/section.css');
+
+@import url('./layout/header.css');
+
+@import url('./layout/hero.css');
+@import url('./layout/quote.css');
+@import url('./layout/exercise-filters.css');
+
+@import url('./layout/pagination.css');
+
+@import url('./layout/favorites-quote.css');
+@import url('./layout/favorites-exercises.css');
+
+@import url('./layout/exercise-modal.css');
+@import url('./layout/footer.css');
+@import url('./layout/exercises-gallery.css');
+@import url('./layout/burger-modal-menu.css');
+
+@import url('./layout/sport.css');
+@import url('./layout/rating-form.css');
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
